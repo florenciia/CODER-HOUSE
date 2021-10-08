@@ -1,0 +1,554 @@
+/*DESDE 1400 A MÁS ANCHO 
+@media (min-width: 1400px) {*/
+
+    body{
+        font-family: 'Cairo';
+        background-color: black;
+    }
+    .titulo {
+        font-weight: bold;
+        font-size: 4rem;
+        font-weight: normal;
+        
+    }
+    .btn-close{
+        background-color: aquamarine;
+    }
+    .offcanvas-title{
+        font-size: 2rem;
+    }
+    a{
+        font-size: 1.8rem;
+    }
+    a:hover{
+        color: aquamarine;
+    }
+    .nav-link:hover{
+        color: aquamarine;
+    }
+    .navbar,
+    .navbar-brand{
+        color: #ffffff;
+        background-color: #000000;
+    }
+    .navbar-toggler {
+        background-color: aquamarine;
+        margin-right: 1%;
+    }
+    .offcanvas-header,
+    .offcanvas-body,
+    .dropdown-menu {
+        background-color: #000000;
+        color: #ffffff;
+        border-color: aquamarine;
+    }
+    .offcanvas-body a{
+        color: #ffffff;
+    }
+    .titulo a,
+    .offcanvas-body a:hover,
+    .dropdown-menu a :hover{
+        color: aquamarine;
+        background-color: #000000;
+    }
+/*PÁGINA PRINCIPAL*/
+
+.imagenFondo{
+    margin-top: -2rem;
+    width: 100%;
+    height: auto;
+}
+
+.tituloPrincipal{
+    color: #000000;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 3.8rem;
+    text-align: center;
+    -webkit-text-stroke: 3px aquamarine;
+  
+}
+
+.textoPrincipal {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: black;
+    opacity: 90%;
+    padding: 0.5rem;
+    border: solid 0.5rem aquamarine;
+    border-radius: 1rem 1rem 1rem 1rem ;
+
+}
+
+/*PÁGINA DE CADA ESTILO*/
+
+    .estilosGeneral{
+        padding: 0.5rem;
+        border: solid 0.5rem aquamarine;
+    }
+    .tituloEstilos{
+        text-align: center;
+        color: #ffffff;
+        font-size: 4rem;
+    }
+    .texto-estilos{
+        color: #ffffff;
+        font-size: 1.8rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+    .hh{
+        font-size: 1.7rem;
+    }
+    .card{
+        font-size: 1rem;
+        margin: 2rem;
+        background-color: black;
+        color: white;
+    }
+    .card-img-top{
+        margin-left: 2rem;
+        width: 30rem;
+        height: 10rem;
+    }
+
+
+/*RESPONSIVE CEL*/
+
+@media (max-width: 768px) {
+    body{
+        font-family: 'Cairo';
+        background-color: black;
+    }
+    .titulo {
+        font-weight: bold;
+        font-size: 2rem;
+        font-weight: normal;
+        
+    }
+    .offcanvas-title{
+        font-size: 2rem;
+    }
+    a{
+        font-size: 1.8rem;
+    }
+    .navbar,
+    .navbar-brand{
+        color: #ffffff;
+        background-color: #000000;
+    }
+    .navbar-toggler {
+        background-color: aquamarine;
+        margin-right: 1%;
+    }
+    .offcanvas-header,
+    .offcanvas-body,
+    .dropdown-menu {
+        background-color: #000000;
+        color: #ffffff;
+        border-color: aquamarine;
+    }
+    .offcanvas-body a{
+        color: #ffffff;
+    }
+    .titulo a,
+    .offcanvas-body a:hover,
+    .dropdown-menu a :hover{
+        color: aquamarine;
+        background-color: #000000;
+    }
+
+/*PÁGINA PRINCIPAL*/
+
+.imagenFondo{
+    margin-top: 0rem;
+    width: 100%;
+    height: auto;
+}
+
+.tituloPrincipal{
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 6rem;
+    text-align: center;
+    -webkit-text-stroke: 0.4px aquamarine;
+}
+
+.textoPrincipal {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: black;
+    opacity: 90%;
+    padding: 0.5rem;
+    border: solid 0.1rem aquamarine;
+    border-radius: 1rem 1rem 1rem 1rem ;
+
+}
+
+/*PÁGINA DE CADA ESTILO*/
+
+    .estilosGeneral{
+        padding: 0.5rem;
+        border: solid 0.5rem aquamarine;
+    }
+    .tituloEstilos{
+        text-align: center;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+    .texto-estilos{
+        color: #ffffff;
+        font-size: 1rem;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: center;
+    }
+    .hh{
+        font-size: 1rem;
+    }
+    .card{
+        font-size: 0.7rem;
+        margin: 1rem;
+        background-color: black;
+        color: white;
+    }
+    .card-img-top{
+        margin-left: 0rem;
+        width: 20rem;
+        height: 10rem;
+    }
+}
+
+
+/*RESPONSIVE TABLET*/
+
+@media (max-width: 1200px) {
+    body{
+        font-family: 'Cairo';
+        background-color: black;
+    }
+    .titulo {
+        font-weight: bold;
+        font-size: 2rem;
+        font-weight: normal;
+        
+    }
+    .offcanvas-title{
+        font-size: 1.5rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    .navbar,
+    .navbar-brand{
+        color: #ffffff;
+        background-color: #000000;
+    }
+    .navbar-toggler {
+        background-color: aquamarine;
+        margin-right: 1%;
+    }
+    .offcanvas-header,
+    .offcanvas-body,
+    .dropdown-menu {
+        background-color: #000000;
+        color: #ffffff;
+        border-color: aquamarine;
+    }
+    .offcanvas-body a{
+        color: #ffffff;
+    }
+    .titulo a,
+    .offcanvas-body a:hover,
+    .dropdown-menu a :hover{
+        color: aquamarine;
+        background-color: #000000;
+    }
+
+/*PÁGINA PRINCIPAL*/
+
+.imagenFondo{
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.tituloPrincipal{
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 4.5rem;
+    text-align: center;
+    -webkit-text-stroke: 0.4px aquamarine;
+}
+
+.textoPrincipal {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: black;
+    opacity: 90%;
+    padding: 0.5rem;
+    border: solid 0.1rem aquamarine;
+    border-radius: 1rem 1rem 1rem 1rem ;
+
+}
+
+/*PÁGINA DE CADA ESTILO*/
+
+    .estilosGeneral{
+        padding: 0.5rem;
+        border: solid 0.2rem aquamarine;
+    }
+    .tituloEstilos{
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+    .texto-estilos{
+        color: #ffffff;
+        font-size: 1rem;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-align: center;
+    }
+    .hh{
+        font-size: 1rem;
+    }
+    .card{
+        font-size: 0.5rem;
+        margin: 1rem;
+        background-color: black;
+        color: white;
+    }
+    .card-img-top{
+        margin-left: 0rem;
+        width: 20rem;
+        height: 10rem;
+    }
+}
+
+/* ----------------------------------------------------------- */
+
+/* página de clases*/
+.tituloPrincipalClases{
+    margin-top: 6.5rem;
+    color: #000000;
+    -webkit-text-stroke: 2px aquamarine;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: underline 0.2rem;
+}
+
+.tituloClases{
+    color: aquamarine;
+    /*-webkit-text-stroke: 1px aquamarine;*/
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-decoration: underline 0.3rem;
+    text-align: center;
+}
+.buscador-input{
+    background-color: black;
+    border: solid 5px aquamarine;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 35rem;
+    height: 5rem;
+    margin-left: 10%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-buscador{
+    background-color: #000000;
+    border: solid 3px aquamarine;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 10rem;
+    height: 3rem;
+    padding-bottom: 0.2rem;
+    cursor: pointer;
+     /* display: none; para sacar el btn*/
+}
+.template{
+    margin-left: 5rem;
+    background-color: black;
+    padding: 1rem;
+    width: 20rem;
+    color: white; 
+}
+
+.card_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15,1fr));
+    grid-gap: 2rem;
+}
+.container_grid{
+    margin-left: 10%;
+}
+
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30rem;
+    height: auto;
+    border: solid 5px aquamarine;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.mensaje{
+    text-align: center;
+    font-size: 2rem;
+    background-color: red;
+    color: #ffffff;
+    border: solid 4px black;
+    width: 30rem;
+    margin-left: 33%;
+    margin-top: 2%;
+}
+
+.mensajeCompra{
+    position: relative;
+    left: 25%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 10px aquamarine;
+    width: 50rem;
+    height: auto;
+}
+
+.btn{
+    width: 7rem;
+    height: auto;
+    color: #ffffff;
+    border: solid 1px aquamarine;
+}
+.btn:hover{
+    background-color: aquamarine;
+    color: #000000;
+}
+
+
+@media (max-width: 768px){
+.tituloPrincipalClases{
+    margin-top: 8rem;
+    color: #000000;
+    -webkit-text-stroke: 0.5px aquamarine;
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: underline 0.1rem;
+}
+.tituloClases{
+    color: black;
+    -webkit-text-stroke: 1px aquamarine;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: underline 0.2rem;
+}
+.buscador-input{
+    background-color: black;
+    border: solid 5px aquamarine;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 20rem;
+    height: 3rem;
+    margin-left: 5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.btn-buscador{
+    background-color: #000000;
+    border: solid 3px aquamarine;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 10rem;
+    height: 3rem;
+    padding-bottom: 0.2rem;
+    cursor: pointer;
+    display: none; /*para sacar el btn*/
+}
+.template{
+    margin-left: 0rem;
+    background-color: black;
+    padding: 1rem;
+    width: 10rem;
+    color: white; 
+}
+
+.card_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15,1fr));
+    grid-gap: 2rem;
+}
+
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 20rem;
+    height: auto;
+    border: solid 5px aquamarine;
+    margin: 1rem;
+    font-size: 1rem;
+
+}
+
+.mensaje{
+    text-align: center;
+    font-size: 2rem;
+    background-color: red;
+    color: #ffffff;
+    border: solid 4px black;
+    width: 25rem;
+    margin-left: -10%;
+    margin-top: 5%;
+}
+
+.mensajeCompra{
+    position: relative;
+    left: -0%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 10px aquamarine;
+    width: 28rem;
+    height: auto;
+}
+
+.btn{
+    width: 7rem;
+    height: auto;
+    color: #ffffff;
+    border: solid 1px aquamarine;
+}
+.btn:hover{
+    background-color: aquamarine;
+    color: #000000;
+}
+
+
+}
