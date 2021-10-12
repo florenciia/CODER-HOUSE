@@ -31,20 +31,7 @@ const paqueteSiete = new clases( 7 , 'Agustina', 250 , 'Waaking', '1 vez a la se
 let paquetesGeneral = [paqueteUno, paqueteDos, paqueteTres, paqueteCuatro, paqueteCinco, paqueteSeis, paqueteSiete];
 
 let interaccion = document.getElementById('interaccion1');
-/*
-for (dato of paquetesGeneral) {
-    let nuevaSeccion = document.createElement('div');
-    nuevaSeccion.innerHTML =  `<div class="infoInner card2 col">
-                                <p class="card_id"> Numero de Id: ${dato.id}</p>
-                                <h1 class="card_profe">Nombre de la profe: ${dato.profe} </h1>
-                                <br> <p class="card_estilo"> Estilo: ${dato.estilo}</p>
-                                <br> <p class="card_precio"> $${dato.precio}</p>
-                                <br> <p class="card_vecesXsemana">${dato.vecesXsemana}</p>
-                                <br> <p class="card_stock"> Cupos: ${dato.stock}</p> 
-                                </div> `
 
-interaccion.appendChild(nuevaSeccion);
-}*/
 
 const formulario = document.getElementById("form");
 const llamandoInput = document.getElementById("input-buscador");
@@ -60,7 +47,11 @@ const htmlTemplate = (claseElegida) => {
                         </div> `;
 };
 
+let carrito = [];
+mostrarCarrito();
+
 const guardarInfo = (paquetesGeneral, container) => {
+
     container.innerHTML = "";
 
     if(paquetesGeneral.length > 0) {
@@ -77,25 +68,26 @@ const guardarInfo = (paquetesGeneral, container) => {
                     const boton = document.createElement("button");
                     boton.classList.add("btn");
                     boton.innerText = "Seleccionar"
-                    boton.addEventListener("click", () => ( 
-                        container.innerHTML = (`
-                        <p class="mensajeCompra"> Ha elegido la clase: ${claseElegida.estilo}.
-                                                  Con un total de: $${claseElegida.precio}</p>`)
-                    ));
-
+                    boton.addEventListener("click", () => { /*
+                        container.innerHTML = `<p class="mensajeCompra">
+                    Ha elegido la clase: ${claseElegida.estilo}.
+                    Con un total de: $${claseElegida.precio}
+                    </p>`*/
+                                              
+                        carrito.push(claseElegida);
+                        localStorage.setItem("carrito", JSON.stringify(carrito));                       
+                    
+                    });
                     card.appendChild(boton);
                     container.appendChild(card);
-                }   
-            } else{
-                container.innerHTML = `<p class="mensaje"> No se encuentran clases </p>`
-    }
+            }
+        }
+            else { container.innerHTML = `<p class="mensaje"> No se encuentran clases </p>` }
 };
-
 guardarInfo(paquetesGeneral, formulario);
 
 const filterPaquetesGeneral = () => {
     const llamandoInputValue = llamandoInput.value
-    //console.log(llamandoInputValue);
     const filterPaquetesGeneral = paquetesGeneral.filter((claseElegida) => {
         const claseElegidaEstilo = claseElegida.estilo.toLowerCase();
         const claseElegidaProfeLowerCase = claseElegida.profe.toLowerCase()
@@ -111,16 +103,37 @@ const filterPaquetesGeneral = () => {
 
 llamandoInput.addEventListener('keyup', filterPaquetesGeneral);
 
+function mostrarCarrito() {
+
+    const carritoEnString = localStorage.getItem("carrito");
+    const carrito = JSON.parse(carritoEnString);
+
+    let contenedorCarrito = document.getElementById('carrito');
+
+    contenedorCarrito.innerHTML = "" ;
+
+    for( let claseComprada of carrito ) {
+        contenedorCarrito.innerHTML +=  `
+        <p class="mensajeCompra"> Ha elegido la clase: ${claseComprada.estilo}.
+        Con un total de: $${claseComprada.precio}</p>`
+    }  
+}
+
+
+
+
+
+
+
+
 /* localstorage -json */
-
-localStorage.setItem("clases", JSON.stringify(paquetesGeneral));
-
-let paquetesGeneral2 = localStorage.getItem("clases");
-paquetesGeneral2 = JSON.parse(paquetesGeneral2);
-
+/*localStorage.setItem("carritoContainer", JSON.stringify(paquetesGeneral));
+let paquetesGeneral2 = localStorage.getItem("carritoContainer");
+paquetesGeneral2 = JSON.parse(paquetesGeneral2);*/
 
 /* ----------carrito----------------- */
 
+/*
 let carrito = document.getElementById('carrito');
 
 for( let claseComprada of paquetesGeneral2){
@@ -131,7 +144,7 @@ for( let claseComprada of paquetesGeneral2){
                     
 
 carrito.appendChild(carritoCompra);
-}
+}*/
 
 
 /*
@@ -226,15 +239,3 @@ const valor = inputSeleccionado.value
 
 
 
-
-
-
-
-/*
-let mensajeCompra = document.getElementById("mensajeCompra")
-mensajeCompra = (`div>
-Ha elegido la clase: ${claseElegida.estilo}.
-Con un total de: $${claseElegida.precio}
-</div>`));
-
-container.appendChild(mensajeCompra);*/

@@ -426,7 +426,7 @@
 
 .mensajeCompra{
     position: relative;
-    left: 25%;
+    left: -5%;
     margin-top: 10%;
     text-align: center;
     font-size: 2rem;
@@ -448,31 +448,237 @@
     color: #000000;
 }
 
+@media (min-width: 1200px){
+    .tituloPrincipalClases{
+        margin-top: 7rem;
+        color: #000000;
+        -webkit-text-stroke: 1.5px aquamarine;
+        font-size: 4rem;
+        font-weight: bold;
+        text-decoration: underline 0.2rem;
+    }
+    .tituloClases{
+        color: black;
+        -webkit-text-stroke: 1px aquamarine;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-decoration: underline 0.2rem transparent;
+    }
+    .buscador-input{
+        background-color: black;
+        border: solid 4px aquamarine;
+        color: #ffffff;
+        font-size: 1.5rem;
+        width: 25rem;
+        height: 3rem;
+        margin-left: 16.5rem;
+        border-radius: 0.2rem;
+        margin-bottom: 0rem;
+    }
+    
+    .btn-buscador{
+        background-color: #000000;
+        border: solid 3px aquamarine;
+        font-size: 1.5rem;
+        color: #ffffff;
+        width: 10rem;
+        height: 3rem;
+        padding-bottom: 0.2rem;
+        cursor: pointer;
+        display: none; /*para sacar el btn*/
+    }
+    .template{
+        margin-left: 0rem;
+        background-color: black;
+        padding: 1rem;
+        width: 10rem;
+        color: white; 
+    }
+    
+    .card_grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15,1fr));
+        grid-gap: 2rem;
+    }
+    
+    .card2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 20rem;
+        height: auto;
+        border: solid 3px aquamarine;
+        margin: 2rem;
+        font-size: 1.5rem;
+    
+    }
+    
+    .mensaje{
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: red;
+        color: #ffffff;
+        border: solid 4px black;
+        width: 20rem;
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+    
+    .mensajeCompra{
+        margin-top: 1%;
+        margin-left: 17%;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #ffffff;
+        border: solid 4px aquamarine;
+        width: 20rem;
+        height: auto;
+    }
+    
+    .btn{
+        width: 7rem;
+        height: auto;
+        color: #ffffff;
+        border: solid 1px aquamarine;
+    }
+    .btn:hover{
+        background-color: aquamarine;
+        color: #000000;
+    }
+    
+    
+}
+
+
+@media (max-width: 1200px){
+    .tituloPrincipalClases{
+        margin-top: 4.5rem;
+        color: #000000;
+        -webkit-text-stroke: 1px aquamarine;
+        font-size: 4rem;
+        font-weight: bold;
+        text-decoration: underline 0.2rem;
+    }
+    .tituloClases{
+        color: black;
+        -webkit-text-stroke: 0.8px aquamarine;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: underline 0.2rem transparent;
+    }
+    .buscador-input{
+        background-color: black;
+        border: solid 3.5px aquamarine;
+        color: #ffffff;
+        font-size: 1.2rem;
+        width: 20rem;
+        height: 3rem;
+        margin-left: 7.8rem;
+        border-radius: 0.2rem;
+        margin-bottom: 0rem;
+    }
+    
+    .btn-buscador{
+        background-color: #000000;
+        border: solid 3px aquamarine;
+        font-size: 1.5rem;
+        color: #ffffff;
+        width: 10rem;
+        height: 3rem;
+        padding-bottom: 0.2rem;
+        cursor: pointer;
+        display: none; /*para sacar el btn*/
+    }
+    .template{
+        margin-left: 0rem;
+        background-color: black;
+        padding: 1rem;
+        width: 10rem;
+        color: white; 
+    }
+    
+    .card_grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15,1fr));
+        grid-gap: 2rem;
+    }
+    
+    .card2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 20rem;
+        height: auto;
+        border: solid 4px aquamarine;
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    
+    }
+    
+    .mensaje{
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: red;
+        color: #ffffff;
+        border: solid 4px black;
+        width: 20rem;
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+    
+    .mensajeCompra{
+        margin-top: 1%;
+        margin-left: 16%;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #ffffff;
+        border: solid 4px aquamarine;
+        width: 20rem;
+        height: auto;
+    }
+    
+    .btn{
+        width: 7rem;
+        height: auto;
+        color: #ffffff;
+        border: solid 1px aquamarine;
+    }
+    .btn:hover{
+        background-color: aquamarine;
+        color: #000000;
+    }
+    
+    
+}
 
 @media (max-width: 768px){
 .tituloPrincipalClases{
-    margin-top: 8rem;
+    margin-top: 4rem;
     color: #000000;
-    -webkit-text-stroke: 0.5px aquamarine;
+    -webkit-text-stroke: 0.8px aquamarine;
     font-size: 4rem;
     font-weight: bold;
-    text-decoration: underline 0.1rem;
+    text-decoration: underline 0.13rem;
 }
 .tituloClases{
     color: black;
-    -webkit-text-stroke: 1px aquamarine;
-    font-size: 1.8rem;
+    -webkit-text-stroke: 0.5px aquamarine;
+    font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: underline 0.2rem;
+    text-decoration: underline 0.2rem transparent;
 }
 .buscador-input{
     background-color: black;
-    border: solid 5px aquamarine;
+    border: solid 2px aquamarine;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1rem;
     width: 20rem;
     height: 3rem;
-    margin-left: 5rem;
+    margin-left: 3.7rem;
     border-radius: 0.5rem;
     margin-bottom: 0rem;
 }
@@ -517,25 +723,24 @@
 
 .mensaje{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: red;
     color: #ffffff;
-    border: solid 4px black;
-    width: 25rem;
-    margin-left: -10%;
-    margin-top: 5%;
+    border: solid 4px transparent;
+    width: 20rem;
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
-.mensajeCompra{
-    position: relative;
-    left: -0%;
-    margin-top: 10%;
+.mensajeCompra{    
+    margin-top: 2%;
+    margin-left: 19%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: transparent;
     color: #ffffff;
-    border: solid 10px aquamarine;
-    width: 28rem;
+    border: solid 3px aquamarine;
+    width: 20rem;
     height: auto;
 }
 
