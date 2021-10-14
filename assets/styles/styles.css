@@ -757,3 +757,225 @@
 
 
 }
+
+
+/*-----------------------------------------------*/
+
+/*CONTACTO HTML*/
+.btnConsultame{
+    margin-top: 8rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: aquamarine;
+    opacity: 80%;
+    width: 25rem;
+    height: 8rem;
+    margin-left: 42%;
+}
+.form{
+    padding: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 50%;
+    opacity: 90%;
+    width: 35rem;
+    margin-left: 39%;
+    margin-top: 2%;
+}
+.text{
+    font-family: 'Cairo';
+    color: #000000;
+    font-size: 2rem;
+
+}
+.input{
+    background-color: transparent;
+    border: solid 3px black;
+    color: black;
+    font-size: 1rem;
+    width: 15rem;
+    height: 3rem;
+}
+
+.inputTextarea{
+    background-color: transparent;
+    border: solid 3px black;
+    color: black;
+    font-size: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+.inputSubmit{
+    background-color: transparent;
+    border: solid 3px black;
+    color: black;
+    font-size: 1rem;
+    width: 7rem;
+    height: 2rem;
+    margin-left: 2.5%;
+    margin-top: 5%;
+}
+.submitTexto{
+    margin-top: -40%;
+    margin-left: 75%;
+    color: #000000;
+    font-size: 2rem;
+    width: 45rem;
+    padding: 2rem;
+    background-color: greenyellow;
+}
+
+.input:hover,
+.inputSubmit:hover,
+.inputTextarea:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px){
+    .btnConsultame{
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000000;
+        background-color: aquamarine;
+        opacity: 100%;
+        width: 20rem;
+        height: 7rem;
+        margin-left: 32%;
+    }
+    .form{
+        padding: 4rem;
+        font-size: 1rem;
+        text-align: center;
+        background-color: aquamarine;
+        border-radius: 45%;
+        opacity: 80%;
+        width: 30rem;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    .text{
+        font-family: 'Cairo';
+        color: #000000;
+        font-size: 1rem;
+
+    }
+    .input{
+        background-color: transparent;
+        border: solid 3px black;
+        color: black;
+        font-size: 1rem;
+        width: 20rem;
+        height: 2rem;
+    }
+    
+    .inputTextarea{
+        background-color: transparent;
+        border: solid 3px black;
+        color: black;
+        font-size: 1rem;
+        width: 20rem;
+        height: 5rem;
+    }
+    
+    .inputSubmit{
+        background-color: transparent;
+        border: solid 4px black;
+        color: black;
+        font-size: 1rem;
+        width: 7rem;
+        height: 2rem;
+        margin-left: 2.5%;
+        margin-top: 5%;
+    }
+    .submitTexto{
+    margin-top: -15%;
+    margin-left: 70%;
+    color: #000000;
+    font-size: 1rem;
+    width: 15rem;
+    padding: 1rem;
+    background-color: greenyellow;
+    }
+
+    .input:hover,
+    .inputSubmit:hover,
+    .inputTextarea:hover{
+    background-color: #000000;
+    border: solid 4px greenyellow ;
+    color: #ffffff;
+    cursor: pointer;
+    }
+}
+
+@media (max-width: 768px){
+    .btnConsultame{
+        margin-top: 8rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #000000;
+        background-color: aquamarine;
+        opacity: 80%;
+        width: 25rem;
+        height: 8rem;
+        margin-left: 5%;
+    }
+    .form{
+        padding: 4rem;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: aquamarine;
+        border-radius: 50%;
+        opacity: 90%;
+        width: 25rem;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .text{
+        font-family: 'Cairo';
+        color: #000000;
+        font-size: 1.5rem;
+    }
+    .input{
+        background-color: transparent;
+        border: solid 3px black;
+        color: #000000;
+        font-size: 1rem;
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .inputTextarea{
+        background-color: transparent;
+        border: solid 3px black;
+        color: black;
+        font-size: 1rem;
+        width: 15rem;
+        height: 5rem;
+    }
+    .inputSubmit{
+        background-color: transparent;
+        border: solid 2px black;
+        color: black;
+        font-size: 1rem;
+        width: 7rem;
+        height: 2rem;
+        margin-left: 2.5%;
+        margin-top: 2%;
+    }
+    .submitTexto{
+        margin-top: -140%;
+        margin-left: 65%;
+        color: #000000;
+        font-size: 0.78rem;
+        width: 10rem;
+        padding: 1rem;
+        background-color: greenyellow;
+        }
+}
