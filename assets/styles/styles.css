@@ -227,6 +227,11 @@
         width: 20rem;
         height: 10rem;
     }
+    .voguevideo{
+        width: 7rem;
+        height: auto;
+    }
+
 }
 
 
@@ -339,6 +344,10 @@
         width: 20rem;
         height: 10rem;
     }
+    .voguevideo{
+        width: 20rem;
+        height: auto;
+    }
 }
 
 /* ----------------------------------------------------------- */
@@ -447,6 +456,27 @@
     background-color: aquamarine;
     color: #000000;
 }
+.btnGetJson{
+    margin-top: -2rem;
+    color: black;
+    font-size:2rem; 
+    background-color: aqua;
+    width: 20rem;
+    height: 5rem;
+    margin-left: 5rem;
+}
+.cardGetJson{
+    background-color: aquamarine;
+    color: black;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+    padding: 0.5rem;
+}
+.textoGetJson{
+    font-size: 1.5rem;
+}
 
 @media (min-width: 1200px){
     .tituloPrincipalClases{
@@ -546,6 +576,27 @@
     .btn:hover{
         background-color: aquamarine;
         color: #000000;
+    }
+    .btnGetJson{
+        margin-bottom: 2rem;
+        color: black;
+        font-size:2rem; 
+        background-color: aqua;
+        width: 20rem;
+        height: 5rem;
+        margin-left: 5rem;
+    }
+    .cardGetJson{
+        background-color: aquamarine;
+        color: black;
+        margin-left: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        width: 30rem;
+        padding: 0.5rem;
+    }
+    .textoGetJson{
+        font-size: 1.5rem;
     }
     
     
@@ -651,7 +702,27 @@
         background-color: aquamarine;
         color: #000000;
     }
-    
+    .btnGetJson{
+        margin-bottom: 2rem;
+        color: black;
+        font-size:2rem; 
+        background-color: aqua;
+        width: 20rem;
+        height: 5rem;
+        margin-left: 5rem;
+    }
+    .cardGetJson{
+        background-color: aquamarine;
+        color: black;
+        margin-left: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        width: 30rem;
+        padding: 0.5rem;
+    }
+    .textoGetJson{
+        font-size: 1.5rem;
+    }
     
 }
 
@@ -754,7 +825,27 @@
     background-color: aquamarine;
     color: #000000;
 }
-
+.btnGetJson{
+    margin-bottom: 2rem;
+    color: black;
+    font-size:1.5rem; 
+    background-color: aqua;
+    width: 20rem;
+    height: 5rem;
+    margin-left: 3rem;
+}
+.cardGetJson{
+    background-color: aquamarine;
+    color: black;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 0.5rem;
+}
+.textoGetJson{
+    font-size: 1rem;
+}
 
 }
 
@@ -824,8 +915,10 @@
     margin-left: 75%;
     color: #000000;
     font-size: 2rem;
-    width: 45rem;
+    width: 35rem;
     padding: 2rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
     background-color: aqua;
 }
 
@@ -904,6 +997,8 @@
     font-size: 1rem;
     width: 15rem;
     padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
     background-color: aqua;
     }
 
@@ -975,12 +1070,16 @@
         margin-top: 2%;
     }
     .submitTexto{
-        margin-top: -140%;
+        margin-top: -120%;
         margin-left: 65%;
         color: #000000;
         font-size: 0.78rem;
         width: 10rem;
         padding: 1rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
         background-color: aqua;
+        
         }
 }
+

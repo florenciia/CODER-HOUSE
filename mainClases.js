@@ -103,9 +103,12 @@ let paquetesGeneral = [
     paqueteSeis,
     paqueteSiete,
 ];
+
 let interaccion = document.getElementById("interaccion1");
 const formulario = document.getElementById("form");
 const llamandoInput = document.getElementById("input-buscador");
+
+
 
 const htmlTemplate = (claseElegida) => {
     return `<div class="template card2">
@@ -133,6 +136,8 @@ const guardarInfo = (paquetesGeneral, container) => {
             });
             card.appendChild(boton);
             container.appendChild(card);
+//            localStorage.clean();
+
         }
     } else {
         container.innerHTML = `<p class="mensaje"> No se encuentran clases </p>`;
@@ -152,27 +157,3 @@ const filterPaquetesGeneral = () => {
     guardarInfo(filterPaquetesGeneral, formulario);
 };
 llamandoInput.addEventListener("keyup", filterPaquetesGeneral);
-
-
-
-// CLASE 14 -> AJAX CON JQUERY
-
-//MÉTODO GET
-
-const URLGET = "https://jsonplaceholder.typicode.com/posts";
-
-$("body").append('<button id="btnGet" style="margin-bottom: 2rem; color: white; font-size:3rem;  background-color: green; width: 10rem; height: 7rem; margin-left: 2rem;"> GET </button>');
-
-$("#btnGet").click(() => { 
-    $.get(URLGET, function (response, state) {
-
-          if(state === 'success') {
-            for (const dato of response) {
-              $("body").append(`<div style="background-color: lightgreen; color: black; margin-left: 2rem; border-radius: 1rem; margin-bottom: 1rem; width: 30rem; padding: 0.5rem">
-                                   <h3>${dato.title}</h3>
-                                   <p> ${dato.body}</p>
-                                  </div>`);
-            }  
-          }
-    });
-});

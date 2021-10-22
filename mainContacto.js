@@ -1,15 +1,15 @@
 $("body").prepend(`<div id="div1" class="form" >
                             <form id="target">
                             <p class="text">Nombre</p>
-                            <input class="input" type="text" name="nameInput" placeholder="Tu nombre">
+                            <input class="input" type="text" placeholder="Tu nombre">
                             <p class="text">Email</p>
-                                <input class="input" type="text" name="emailInput" placeholder="Tu email">
+                                <input class="input" type="text" placeholder="Tu email">
                             <p class="text">Teléfono</p>
-                                <input class="input" type="text" name="telInput" placeholder="Tu número">
+                                <input class="input" type="text" placeholder="Tu número">
                             <p class="text">Cantidad de clases</p>
-                                <input class="input" name="cantInput" type="number">
+                                <input class="input" type="number">
                             <p class="text">Mensaje</p>
-                                <input class="inputTextarea" type="textarea" name="msjInput" placeholder="Dejanos un mensaje">
+                                <input class="inputTextarea" type="textarea"  placeholder="Dejanos un mensaje">
                             <br>
                             <input class="inputSubmit" type="submit" id="enviar">
 
@@ -26,7 +26,7 @@ $("#btn1").click(() => {
 
 $( "#target" ).submit(function( event ) {
     event.preventDefault();  
-   
+   container.innerHTML = `<p class="submitTexto"> Se han enviado correctamento los datos! </p>` 
 });
 
 //DESAFÍO CLASE 14 - 1
