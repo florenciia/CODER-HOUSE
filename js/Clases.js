@@ -29,25 +29,36 @@ function traerCarrito() {
         return [];
     }
 }
+
 const carrito = traerCarrito();
 function mostrarCarrito() {
     const carritoEnString = localStorage.getItem("carrito");
     const carrito = JSON.parse(carritoEnString);
     let contenedorCarrito = document.getElementById("carrito");
+    let finalizarCompra = document.querySelector('#finalizar');
+
     contenedorCarrito.innerHTML = "";
     if (carrito !== null && carrito !== undefined && carrito.length > 0) {
         for (let claseComprada of carrito) {
-            contenedorCarrito.innerHTML += `
+           	contenedorCarrito.innerHTML += `
         <p class="mensajeCompra"> Ha elegido la clase: ${claseComprada.estilo}.
         Con un total de: $${claseComprada.precio}</p>`;
         }
+        finalizarCompra.innerHTML = 
+        `<button class="btnFinCompra" id="finalizarCompra"> Finalizar Compra </button>`
+        
+        const configCompra = document.querySelector('#finalizarCompra');
+        configCompra.addEventListener("click", () => {
+        localStorage.clear();
+        contenedorCarrito.innerHTML = `<p class="compraFin"> Compra realizada correctamente! </p>`
+        });
     }
-}
-/*
-function comprar(){
     
+
 }
-*/
+
+
+
 mostrarCarrito();
 const paqueteUno = new clases(1, "Paz", 250, "House", "1 vez a la semana", 20);
 const paqueteDos = new clases(
@@ -138,7 +149,6 @@ const guardarInfo = (paquetesGeneral, container) => {
             });
             card.appendChild(boton);
             container.appendChild(card);
-            //localStorage.clean();
 
         }
     } else {
