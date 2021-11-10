@@ -43,7 +43,11 @@ function mostrarCarrito() {
         }
     }
 }
-
+/*
+function comprar(){
+    
+}
+*/
 mostrarCarrito();
 const paqueteUno = new clases(1, "Paz", 250, "House", "1 vez a la semana", 20);
 const paqueteDos = new clases(
@@ -108,8 +112,6 @@ let interaccion = document.getElementById("interaccion1");
 const formulario = document.getElementById("form");
 const llamandoInput = document.getElementById("input-buscador");
 
-
-
 const htmlTemplate = (claseElegida) => {
     return `<div class="template card2">
                                 <p class="card_estilo"> Estilo: ${claseElegida.estilo}</p>
@@ -128,7 +130,7 @@ const guardarInfo = (paquetesGeneral, container) => {
             card.innerHTML = claseElegidaInnerHTML;
             const boton = document.createElement("button");
             boton.classList.add("btn");
-            boton.innerText = "Seleccionar";
+            boton.innerText = "Añadir al carrito";
             boton.addEventListener("click", () => {
                 carrito.push(claseElegida);
                 localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -136,7 +138,7 @@ const guardarInfo = (paquetesGeneral, container) => {
             });
             card.appendChild(boton);
             container.appendChild(card);
-//            localStorage.clean();
+            //localStorage.clean();
 
         }
     } else {
